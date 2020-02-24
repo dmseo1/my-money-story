@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.seodongmin.expediturerecord">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET"/>;
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>;
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-feature android:name="android.hardware.location.gps" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="My Money Story"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:largeHeap="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity android:name=".init"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <activity android:name=".main"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity android:name=".input_type"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity android:name=".input_income"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity android:name=".input_expenditure"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity android:name=".search"
+            android:screenOrientation="portrait">
+
+        </activity>
+
+        <activity android:name=".setting"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".setting_password"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
+            android:label=""
+            android:theme="@style/Dialog">
+            <intent-filter>
+
+                <action android:name="org.neulboworld.airmouse.intentfilter.speedpopup" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".require_password"
+            android:theme="@style/Dialog"
+            android:screenOrientation="portrait"
+            android:label=""/>
+
+        <activity android:name=".before_password"/>
+
+        <activity
+            android:name=".setting_modify_password"
+            android:theme="@style/Dialog"
+            android:screenOrientation="portrait"
+            android:label=""/>
+
+        <activity android:name=".stat"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".setting_developerinfo"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".setting_appinfo"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".search_details_ex"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".search_details_in"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".listview_search_list"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".search_details_ex_m"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".search_details_in_m"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".setting_inc"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".setting_exc"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".setting_exw"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".setting_targetex"
+            android:theme="@style/Dialog"
+            android:screenOrientation="portrait"
+            android:label=""/>
+
+        <activity
+            android:name=".nowsearching"
+            android:theme="@style/Dialog"
+            android:screenOrientation="portrait"
+            android:label=""/>
+
+        <activity android:name=".setting_exc_add"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".setting_exw_add"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".setting_inc_add"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".iconloadwhere"
+            android:theme="@style/Dialog"
+            android:screenOrientation="portrait"
+            android:label=""/>
+
+        <activity android:name=".iconloadresult"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".delcategory_question"
+            android:theme="@style/Dialog"
+            android:screenOrientation="portrait"
+            android:label=""/>
+
+        <activity android:name=".setting_exc_mod"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".setting_exw_mod"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".setting_inc_mod"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".stat_v2"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".incexp_amount"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".incexp_catchoose"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".incexp_datepicker"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".incexp_waychoose"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".game_calculateit_play"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".game_calculateit_main"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".game_selmode"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".game_ranking"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".game_calculateit_ranking_inputname"
+            android:theme="@style/Dialog"
+            android:screenOrientation="portrait"
+            android:label=""/>
+
+        <activity
+            android:name=".incexp_modify_ymd"
+            android:theme="@style/Dialog"
+            android:screenOrientation="portrait"
+            android:label=""/>
+
+        <activity
+            android:name=".incexp_modify_amount"
+            android:theme="@style/Dialog"
+            android:screenOrientation="portrait"
+            android:label=""/>
+
+        <activity android:name=".game_calculateit_countdown"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".game_fastmemorize_play"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".game_fastmemorize_ranking_inputname"
+            android:theme="@style/Dialog"
+            android:screenOrientation="portrait"
+            android:label=""/>
+
+        <activity android:name=".game_color_play"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".game_color_ranking_inputname"
+            android:theme="@style/Dialog"
+            android:screenOrientation="portrait"
+            android:label=""/>
+
+        <activity android:name=".game_rocksipa_play"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".game_notonline"
+            android:theme="@style/Dialog"
+            android:screenOrientation="portrait"
+            android:label=""/>
+
+        <activity android:name=".game_countdown"
+            android:screenOrientation="portrait"/>
+
+        <receiver android:name=".Broadcast_InputAlarm"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".game_rocksipa_ranking_inputname"
+            android:theme="@style/Dialog"
+            android:screenOrientation="portrait"
+            android:label=""/>
+
+        <activity
+            android:name=".game_ranking_deleteok"
+            android:theme="@style/Dialog"
+            android:screenOrientation="portrait"
+            android:label=""/>
+
+        <activity
+            android:name=".game_ranking_viewdate"
+            android:theme="@style/Dialog"
+            android:screenOrientation="portrait"
+            android:label=""/>
+
+        <activity android:name=".game_countpeople_play"
+            android:screenOrientation="portrait"/>
+        
+        <activity
+            android:name=".game_countpeople_ranking_inputname"
+            android:theme="@style/Dialog"
+            android:screenOrientation="portrait"
+            android:label="" />
+
+        <activity android:name=".game_avoidpoo_play"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".game_avoidpoo_ranking_inputname"
+            android:theme="@style/Dialog"
+            android:screenOrientation="portrait"
+            android:label="" />
+
+        <activity android:name=".game_howto_calculateit"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".game_howto_fastmemorize"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".game_howto_color"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".game_howto_rocksipa"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".game_howto_countpeople"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".game_howto_avoidpoo"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".c_currentsite"
+            android:theme="@style/Dialog"
+            android:screenOrientation="portrait"
+            android:label="" />
+
+        <activity
+            android:name=".incexp_fastaddhelp"
+            android:theme="@style/Dialog"
+            android:screenOrientation="portrait"
+            android:label="" />
+
+        <activity
+            android:name=".search_datepicker"
+            android:theme="@style/Dialog"
+            android:screenOrientation="portrait"
+            android:label="" />
+
+    </application>
+
+</manifest>

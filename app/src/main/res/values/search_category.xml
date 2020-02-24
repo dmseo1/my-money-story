@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="search_income_category">
+
+        <item>모두</item>
+        <item>월급</item>
+        <item>보너스</item>
+        <item>용돈</item>
+        <item>이자</item>
+        <item>기타</item>
+
+
+
+    </string-array>
+
+    <string-array name="search_income_category_second">
+
+        <item>(선택안함)</item>
+        <item>월급</item>
+        <item>보너스</item>
+        <item>용돈</item>
+        <item>이자</item>
+        <item>기타</item>
+
+    </string-array>
+
+
+    <string-array name="search_expenditure_category">
+
+        <item>모두</item>
+        <item>식료품</item>
+        <item>외식</item>
+        <item>교통비</item>
+        <item>통신비</item>
+        <item>공납금</item>
+        <item>수수료</item>
+        <item>저축</item>
+        <item>여가</item>
+        <item>기부</item>
+        <item>기타</item>
+
+    </string-array>
+
+
+    <string-array name="search_expenditure_category_second">
+
+        <item>(선택안함)</item>
+        <item>식료품</item>
+        <item>외식</item>
+        <item>교통비</item>
+        <item>통신비</item>
+        <item>공납금</item>
+        <item>수수료</item>
+        <item>저축</item>
+        <item>여가</item>
+        <item>기부</item>
+        <item>기타</item>
+
+    </string-array>
+
+
+
+
+
+</resources>

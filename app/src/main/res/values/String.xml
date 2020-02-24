@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tab1"> 일간 </string>
+    <string name="tab2"> 주간 </string>
+    <string name="tab3"> 월간 </string>
+    <string name="tab4"> 요약 </string>
+
+    <string name="calculateit_20">계산 20</string>
+    <string name="calculateit_100">계산 100</string>
+    <string name="fastmemorize">순간기억</string>
+    <string name="color">색 말하기</string>
+    <string name="rocksipa">가위바위보</string>
+    <string name="countpeople">인원수세기</string>
+    <string name="avoidpoo">똥피하기</string>
+
+
+</resources>

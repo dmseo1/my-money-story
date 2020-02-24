@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="#1E90FF" />
+
+        <TextView
+            android:id="@+id/incexp_waychoose_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:background="#1E90FF"
+            android:text="지출 기타 정보"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="30sp" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_marginBottom="8dp"
+            android:background="#1E90FF" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/imageView6"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginEnd="6dp"
+                            android:layout_marginStart="6dp"
+                            app:srcCompat="@drawable/ico_calendar" />
+
+                        <TextView
+                            android:id="@+id/incexp_waychoose_lbl_ymd"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="yyyy년 m월 d일 (aaa)"
+                            android:layout_gravity="center_vertical"
+                            android:textColor="#444444"
+                            android:clickable = "true"
+                            android:textSize="18sp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_weight="1" />
+
+                        <TextView
+                            android:id="@+id/incexp_waychoose_lbl_amount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="000,000원"
+                            android:textAlignment="textEnd"
+                            android:textColor="#444444"
+                            android:clickable = "true"
+                            android:textSize="18sp" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="15dp" />
+                    <TextView
+                        android:id="@+id/incexp_waychoose_lbl_where"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#444444"
+                        android:textSize="18sp"
+                        android:clickable = "true"
+                        android:text="(사용처)" />
+
+                    <View
+                        android:id="@+id/view9"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#cccccc" />
+
+                    <TextView
+                        android:id="@+id/incexp_waychoose_lbl_imfeeling"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="지출에 대한 만족도를 평가하자면?"
+                        android:textColor="#000000"
+                        android:textSize="18sp" />
+
+
+                    <LinearLayout
+                        android:id="@+id/expenditure_emotion"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioGroup
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/incexp_expenditure_5p"
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:text="" />
+
+                            <ImageButton
+                                android:id="@+id/incexp_expenditure_imgbtn_5p"
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:background="#ffffff"
+                                android:scaleType="fitXY"
+                                app:srcCompat="@drawable/img_emotion_5" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_weight="1" />
+
+                            <RadioButton
+                                android:id="@+id/incexp_expenditure_4p"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="" />
+
+                            <ImageButton
+                                android:id="@+id/incexp_expenditure_imgbtn_4p"
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:background="#ffffff"
+                                android:scaleType="fitXY"
+                                app:srcCompat="@drawable/img_emotion_4" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_weight="1" />
+
+                            <RadioButton
+                                android:id="@+id/incexp_expenditure_3p"
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:checked="true"
+                                android:text="" />
+
+                            <ImageButton
+                                android:id="@+id/incexp_expenditure_imgbtn_3p"
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:background="#ffffff"
+                                android:scaleType="fitXY"
+                                app:srcCompat="@drawable/img_emotion_3" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_weight="1" />
+
+                            <RadioButton
+                                android:id="@+id/incexp_expenditure_2p"
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:text="" />
+
+                            <ImageButton
+                                android:id="@+id/incexp_expenditure_imgbtn_2p"
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:background="#ffffff"
+                                android:scaleType="fitXY"
+                                app:srcCompat="@drawable/img_emotion_2" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_weight="1" />
+
+                            <RadioButton
+                                android:id="@+id/incexp_expenditure_1p"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="" />
+
+                            <ImageButton
+                                android:id="@+id/incexp_expenditure_imgbtn_1p"
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:background="#ffffff"
+                                android:scaleType="fitXY"
+                                app:srcCompat="@drawable/img_emotion_1" />
+                        </RadioGroup>
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:id="@+id/incexp_waychoose_lbl_way"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:text="무엇으로 지출을 하셨나요?"
+                        android:textColor="#000000"
+                        android:textSize="18sp" />
+
+                    <GridView
+                        android:id="@+id/incexp_waychoose_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:numColumns="5" />
+
+
+
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/incexp_waychoose_back"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:background="#1E90FF"
+        android:scaleType="fitXY"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/btn_back" />
+</android.support.constraint.ConstraintLayout>

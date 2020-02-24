@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/chooseicon_icon"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/chooseicon_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layout_gravity="center_vertical"
+        android:textColor="#333131"
+        android:text="TextView" />
+</LinearLayout>
